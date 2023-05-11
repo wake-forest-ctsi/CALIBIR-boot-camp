@@ -7,3 +7,7 @@
 - [Informatics Bootcamp 3: Clinical Informatics / May 31st 1:00 pm - 2:30 pm](./bootcamp_03/agenda.md)
 - [Informatics Bootcamp 4: Translational Bioinformatics / May 31st 1:00 pm - 2:30 pm](./bootcamp_04/agenda.md)
 - [Informatics Bootcamp 5: Artificial Intelligence / May 31st 1:00 pm - 2:30 pm](./bootcamp_05/agenda.md)
+
+## Default Docker container
+
+docker run -p 8888:8888 -v c:/opt/docker/work:/home/jovyan/work --user root -e JUPYTER_ENABLE_LAB=yes -e GRANT_SUDO=yes --name wfbmi-dev jupyter/datascience-notebook:latest

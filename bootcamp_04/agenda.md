@@ -1,6 +1,6 @@
 # Informatics Bootcamp #4: Translational Bioinformatics
 
-- Friday, June 2nd 1:00 pm – 3:00 pm
+- Friday, June 2nd 1:30 pm – 3:00 pm
 - Room 155A/B, Biotech Place
 - Led by Dr. Nichole Allred
 

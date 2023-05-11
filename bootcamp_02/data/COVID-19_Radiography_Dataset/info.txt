@@ -1,0 +1,5 @@
+https://www.kaggle.com/datasets/preetviradiya/covid19-radiography-dataset
+
+
+Easy way to get the masks:
+https://www.kaggle.com/datasets/tawsifurrahman/covid19-radiography-database

@@ -17,6 +17,7 @@
 - [Jupyter Getting Started](JupyterIntro.ipynb)
 
 ## Links from presentation
+
 - HIPAA  https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html
 - CITI https://about.citiprogram.org/
 - i2b2 https://i2b2.wakehealth.edu/

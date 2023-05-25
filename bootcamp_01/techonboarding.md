@@ -1,15 +1,58 @@
 # Getting Started
 
-## Git
+## Visual Studio Code
 
-TO COME
+### Install VS Code
 
-To setup git (needed before commit):
+[Download from https://code.visualstudio.com/Download](https://code.visualstudio.com/Download) or run `winget install --id Microsoft.VisualStudioCode --source winget -ei`
+
+Recommended Selections in installer:
+
+- "Add Open with Code action to Windows Explorer file context menu"
+- "Add Open with Code action to Windows Explorer directory context menu"
+
+### Recommended Extensions
+
+- [Python by Microsoft](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+- [Docker by Microsoft](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
+- [Live Share by Microsoft](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
+- [GitHub Theme by GitHub](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme)
+- [Markdown All in One by Yu Zhang](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+- [indent-rainbow by oderwat](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
+- 
+
+## Git / GitHub
+
+### How to Install Git
+
+[Download from https://git-scm.com/downloads](https://github.com/git-for-windows/git/releases/download/v2.40.1.windows.1/Git-2.40.1-64-bit.exe) or run `winget install --id Git.Git --source winget -ei`
+
+Recommended Selections in installer:
+
+- "Use Visual Studio Code as Git's default editor"
+- "Override the default branch name for new repositories" - main
+- "use external OpenSSH"
+- "use the native Windows Secure Channel library" - THIS IS IMPORTANT
+
+### How to Clone this repo
+
+```
+git clone https://github.com/wake-forest-ctsi/CALIBIR-boot-camp.git .
+```
+
+[backup plan](https://github.com/wake-forest-ctsi/CALIBIR-boot-camp/archive/refs/heads/main.zip)
+
+### Things to know about Git
+
+Basic Configuration (needed before commit):
+
 ```shell
+git config --global credential.helper store
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
-git config --global credential.helper store
 ```
+
+To update from Command Prompt `git update-git-for-windows`
 
 ## Docker
 
@@ -29,7 +72,7 @@ See [Notebook](JupyterIntro.ipynb)
 ### To Spin up Jupter Lab locally
 
 ```shell
-docker run -p 8888:8888 -v C:\home:/home/jovyan/work --user root -e JUPYTER_ENABLE_LAB=yes -e GRANT_SUDO=yes --name wfbmi-dev jupyter/datascience-notebook:latest
+docker run -p 8888:8888 -v "C:\home:/home/jovyan/work" --user root -e JUPYTER_ENABLE_LAB=yes -e GRANT_SUDO=yes --name wfbmi-dev jupyter/datascience-notebook:latest
 ```
 
 

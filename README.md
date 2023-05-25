@@ -10,4 +10,4 @@
 
 ## Default Docker container
 
-docker run -p 8888:8888 -v c:/opt/docker/work:/home/jovyan/work --user root -e JUPYTER_ENABLE_LAB=yes -e GRANT_SUDO=yes --name wfbmi-dev jupyter/datascience-notebook:latest
+docker run -p 8888:8888 -v C:/home:/home/jovyan/work --user root -e JUPYTER_ENABLE_LAB=yes -e GRANT_SUDO=yes --name wfbmi-dev jupyter/datascience-notebook:latest

@@ -17,7 +17,7 @@
 ## Materials
 
 Please download the following jupyter notebooks before the lecture:
-- [Image processing demo](pythons/Image processing lecture.ipynb)
+- [Image processing demo](pythons/Image_processing_lecture.ipynb)
 - [Medical image preprocessing demo](pythons/preprocessing_annotations.ipynb)
 
 The lecture slides can be downloaded from:

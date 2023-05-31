@@ -72,10 +72,19 @@ See [Notebook](JupyterIntro.ipynb)
 ### To Spin up Jupter Lab locally
 
 ```shell
-docker run -p 8888:8888 -v "C:\home:/home/jovyan/work" --user root -e JUPYTER_ENABLE_LAB=yes -e GRANT_SUDO=yes --name wfbmi-dev jupyter/datascience-notebook:latest
+docker run -p 8888:8888 -v C:/home:/home/jovyan/work --user root -e JUPYTER_ENABLE_LAB=yes -e GRANT_SUDO=yes --name wfbmi-dev ghcr.io/wake-forest-ctsi/wfbmi-dev:latest
 ```
+*Note:* I've recently updated the image source from `jupyter/datascience-notebook:latest` to bake in some customizations.  Please use the updated version above if you have any certificate issues.
 
+### If you lose/forget your token
 
+- Start up the wfbmi-dev container in docker desktop
+- click on logs and look for the login url
+- if you can't find it there, open up command prompt and run the following:
+  ```shell
+    docker exec wfbmi-dev jupyter server list
+  ```
+*Note:* The url in this output will give you security errors.  Please use `http://localhost:8888/?token=` instead.
 ## VPN Access
 
 - [Request VPN access for your userID](https://wakehealth.service-now.com/sp?id=sc_cat_item&sys_id=381615be37b00a80c113a9c2b3990e1c&sysparm_category=c23325bc37b88680c113a9c2b3990e16)

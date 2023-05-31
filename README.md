@@ -10,4 +10,7 @@
 
 ## Default Docker container
 
-docker run -p 8888:8888 -v C:/home:/home/jovyan/work --user root -e JUPYTER_ENABLE_LAB=yes -e GRANT_SUDO=yes --name wfbmi-dev jupyter/datascience-notebook:latest
+```shell
+docker run -p 8888:8888 -v C:/home:/home/jovyan/work --user root -e JUPYTER_ENABLE_LAB=yes -e GRANT_SUDO=yes --name wfbmi-dev ghcr.io/wake-forest-ctsi/wfbmi-dev:latest
+```
+*Note:* I've recently updated the image source from `jupyter/datascience-notebook:latest` to bake in some customizations.  Please use the updated version above if you have any certificate issues.
